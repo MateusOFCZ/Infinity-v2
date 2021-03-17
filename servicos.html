@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" href="img/icon.png" />
+		<script src="js/functions.js"></script>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="shortcut icon" href="img/icon.png" />
+		<title>Infinity ~ Serviços</title>
+	</head>
+    <body id="Body" class="Tema_Original">
+        <nav class="navbar navbar-expand-sm navbar-custom sticky-top" style="z-index: 1;">
+			<img class="Logo" src="img/logo.png">
+			<ul class="navbar-nav">
+			<li class="nav-item Nav_Item_Custom">
+			  <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Início</a>
+			</li>			
+			<li class="nav-item dropdown Nav_Item_Custom">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-server"></i> Serviços</a>
+			  <div class="dropdown-menu Nav_Custom_Dropdown">
+				<a class="dropdown-item Nav_Item_Custom_Dropdown" href="#"><i class="fa fa-globe" aria-hidden="true"></i> Todos</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item Nav_Item_Custom_Dropdown" href="#Butterfly"><i class="fa fa-circle" aria-hidden="true"></i> Butterfly</a>
+				<a class="dropdown-item Nav_Item_Custom_Dropdown" href="#iWallet"><i class="fa fa-circle" aria-hidden="true"></i> iWallet <span id="Badge_New_Nav" class="badge badge-danger">NEW</span></a>
+			  </div>
+			</li>
+			<li class="nav-item Nav_Item_Custom">
+			  <a class="nav-link" href="index.html#Contato"><i class="fa fa-envelope"></i> Contate-nos</a>
+			</li>
+			<div class="Nav_Separator">|</div>
+			<li class="nav-item dropdown Nav_Item_Custom">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-adjust"></i> Tema </a><span id="Badge_New_Theme" class="badge badge-danger">NEW</span>
+				<div class="dropdown-menu Nav_Custom_Dropdown">
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('1')">Original</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('2')">Laranja</a>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('3')">Amarelo</a>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('4')">Escuro</a>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('5')">Claro</a>
+				</div>
+			</li>
+		  </ul>
+		</nav>
+        <div id="Butterfly" class="Services_Section_Butterfly">
+			<p class="Title_Butterfly">Butterfly</p>
+            <img class="Butterfly" src="img/butterfly_icon.png">
+			<p class="Text_Butterfly">
+				Com o Butterfly, você poderá controlar o estoque de sua loja, adicionar fornecedores, e possuir um controle financeiro em cima do que você vendeu.
+			</p>
+            <p class="Text_Butterfly">
+				Tudo isso com um painel profissional e simples de usar!
+			</p>
+            <center><img class="Services_Butterfly_Panel" src="img/butterfly_panel.png"></center>
+		</div>
+        <div id="iWallet" class="Services_Section_iWallet">
+			<p class="Title_iWallet">iWallet <span id="Badge_New" class="badge badge-danger">NEW</span></p>
+			<img class="iWallet" src="img/iwallet_icon.png">
+			<p class="Services_Text_iWallet">
+				iWallet, a carteira virtual da Infinity, com ela você<br>poderá receber dinheiro direto do seu cliente e utilizar<br>em outros estabelecimentos.
+			</p>
+            <p class="Services_Text_2_iWallet">
+				Tudo isso com nosso aplicativo gratuito<br>direto do seu celular e com praticidade!
+			</p>
+            <p class="Services_Text_2_iWallet">
+				Disponível na Google Play Store e App Store
+			</p>
+            <center><img class="Services_iWallet_Panel" src="img/iwallet_panel.png"></center>
+            <center>
+            <div class="Services_Row">
+                <div class="Services_Column">
+                    <img class="Services_AppStore_Button" src="img/button_app_store.png">
+                </div><div class="Services_Column">
+                    <img class="Services_PlayStore_Button" src="img/button_play_store.png">
+                </div>
+            </center>
+            </div>
+		</div>
+        <div class="Services_Footer">
+			<p>
+				Todos os direitos reservados a Infinity© | 2021 | Desenvolvido por <a href="https://www.linkedin.com/in/mateusofcz" target="_blank"><strong><name>Mateus</name></strong></a> e <a href="https://www.linkedin.com/in/viniciusdacruzdasilva/" target="_blank"><strong><name>Vinícius</name></strong></a>
+			</p>
+		</div>
+    </body>
+</html>

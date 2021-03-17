@@ -1,0 +1,552 @@
+.Tema_Original {
+	background: linear-gradient(0deg, #FCD400, #F68E00);
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: Arial;
+}
+
+.Tema_Laranja {
+	background: #F68E00;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: Arial;
+}
+
+.Tema_Amarelo {
+	background-color: #FCD400;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: Arial;
+}
+
+.Tema_Escuro {
+	background-color: #3d3d3d;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: Arial;
+}
+
+.Tema_Claro {
+	background-color: #FFFFFF;
+	color: #000000;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: Arial;
+}
+
+.Nav_Separator {
+	color: #FFFFFF;
+	margin-top: 3px;
+	font-size: 20px;
+}
+
+.TextBlack {
+	color: #000000;
+}
+
+.navbar-custom { 
+    background-color: #00000071;
+	color: #FFFFFF;
+	border: none;
+	border-bottom: 2px solid;
+	border-color: #FFFFFF;
+}
+
+.Nav_Item_Custom {
+	color: #FFFFFFBD;
+}
+
+.Nav_Item_Custom:hover {
+	color: #FFFFFF;
+}
+
+.Nav_Custom_Dropdown {
+	background-color: #00000081;
+	color: #FFFFFFBD;
+}
+
+.Nav_Item_Custom_Dropdown {
+	color: #FFFFFFBD;
+}
+
+.Nav_Item_Custom_Dropdown:hover {
+	color: #FFFFFF;
+	background-color: #00000081;
+}
+
+a:link,
+a:visited { 
+	text-decoration: none;
+	color: inherit;
+}
+
+.Header {
+	background-color: rgba(0, 0, 0, 0.3);
+	position: relative;
+	margin-top: -10px;
+	margin-left: -8px;
+	margin-right: -8px;
+	padding-bottom: 0px;
+	border: 0px;
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: #FFFFFF;
+}
+
+.Logo {
+	width: 70px;
+	height: 50px;
+	transition: width 1s, height 1s, transform 1s;
+	margin-right: 380px;
+}
+
+.Logo:hover {
+	width: 80px;
+	height: 60px;
+}
+
+.Section_About {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 30px;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding-top: 1px;
+	padding-bottom: 140px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-style: none;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+
+.Title_About {
+	position: relative;
+	font-size: 50px;
+	padding-left: 90px;
+	transition: 1s;
+}
+
+.Title_About:hover {
+	font-size: 55px;
+}
+
+.Text_About {
+	font-size: 20px;
+	padding-left: 160px;
+	padding-top: 60px;
+	transition: 1s;
+}
+
+.Rocket {
+	float: left;
+	overflow: auto;
+	width: 150px;
+	height: 200px;
+	position: relative;
+	transition: width 1s, height 1s, transform 1s;
+	animation-timing-function: linear;
+	animation: Rocket_Move 5s infinite;
+	animation-play-state: paused;
+}
+
+.Rocket:hover {
+	transform: rotate(-30deg);
+	animation-play-state: running;
+	width: 160px;
+	height: 210px;
+}
+
+@keyframes Rocket_Move {
+  0%   {top: 0px;}
+  50%  {top: -20px;}
+  100% {top: 0px;}
+}
+
+.Section_Butterfly {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 0px;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding-top: 1px;
+	padding-bottom: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-style: none;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+
+.Title_Butterfly {
+	position: relative;
+	font-size: 50px;
+	padding-left: 40px;
+	transition: 1s;
+}
+
+.Title_Butterfly:hover {
+	font-size: 55px;
+}
+
+.Text_Butterfly {
+	text-align: left;
+	font-size: 20px;
+	padding-left: 60px;
+	transition: 1s;
+}
+
+.Butterfly {
+	top: -90px;
+	float: right;
+	overflow: auto;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	transition: width 1s, height 1s, transform 1s;
+	animation-timing-function: linear;
+}
+
+.Butterfly:hover {
+	transform: rotate(-30deg);
+	width: 200px;
+	height: 230px;
+}
+
+.Button_Butterfly {
+	background: linear-gradient(0deg, #FCD400, #F68E00);
+	border: 0px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.8;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 20px;
+	margin-top: 25px;
+	margin-left: 60px;
+  }
+
+.Section_iWallet {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-bottom: 100px;
+	padding-top: 1px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.Title_iWallet {
+	position: relative;
+	font-size: 50px;
+	padding-left: 100px;
+	transition: 1s;
+}
+
+.Title_iWallet:hover {
+	font-size: 55px;
+}
+
+.Text_iWallet {
+	font-size: 20px;
+	padding-left: 360px;
+	padding-top: 60px;
+	transition: 1s;
+}
+
+.Text_2_iWallet {
+	font-size: 20px;
+	padding-left: 500px;
+	padding-top: 10px;
+	transition: 1s;
+}
+
+.iWallet {
+	float: left;
+	left: 100px;
+	overflow: auto;
+	width: 150px;
+	height: 200px;
+	position: relative;
+	transition: width 1s, height 1s, transform 1s;
+	animation-timing-function: linear;
+	animation: iWallet_Move 5s infinite;
+	animation-play-state: paused;
+}
+
+.iWallet:hover {
+	animation-play-state: running;
+}
+
+@keyframes iWallet_Move {
+  0%   {top: 0px;}
+  50%  {top: -20px;}
+  100% {top: 0px;}
+}
+
+.Button_iWallet {
+	background: linear-gradient(0deg, #FCD400, #F68E00);
+	border: 0px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.8;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 20px;
+	margin-top: 0px;
+	margin-left: 740px;
+  }
+
+.Section_Contact {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 30px;
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-bottom: 50px;
+	padding-top: 1px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 100px;
+}
+
+.Title_Contact {
+	position: relative;
+	font-size: 50px;
+	padding-left: 90px;
+	transition: 1s;
+}
+
+.Title_Contact:hover {
+	font-size: 55px;
+}
+
+.Text_Contact {
+	font-size: 20px;
+	padding-left: 100px;
+	padding-top: 25px;
+	transition: 1s;
+}
+
+.Contact {
+	float: left;
+	overflow: auto;
+	width: 80px;
+	height: 90px;
+	opacity: 0.8;
+	position: relative;
+	transition: 1s;
+	animation-timing-function: linear;
+}
+
+.Contact:hover {
+	opacity: 1;
+	transform: rotate(10deg);
+}
+
+.Button_Contact {
+	background: linear-gradient(0deg, #FCD400, #F68E00);
+	border: 0px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.8;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 20px;
+	margin-top: 0px;
+	margin-left: 740px;
+  }
+
+.Services_Section_Butterfly {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 30px;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 100px;
+}
+
+.Services_Butterfly_Panel {
+	margin-top: 60px;
+	width: 400px;
+	height: 200px;
+	transition: 1s;
+}
+
+.Services_Butterfly_Panel:hover {
+	width: 700px;
+	height: 300px;
+}
+
+.Services_Section_iWallet {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 30px;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding-top: 1px;
+	padding-bottom: 200px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 100px;
+}
+
+.Services_iWallet_Panel {
+	margin-top: 60px;
+	width: 200px;
+	height: 400px;
+	transition: 1s;
+	float: right;
+	overflow: auto;
+	position: relative;
+	top: -300px;
+}
+
+.Services_iWallet_Panel:hover {
+	width: 250px;
+	height: 450px;
+}
+
+.Services_Text_iWallet {
+	font-size: 20px;
+	padding-left: 260px;
+	padding-top: 60px;
+	transition: 1s;
+}
+
+.Services_Text_2_iWallet {
+	font-size: 20px;
+	padding-left: 260px;
+	transition: 1s;
+}
+
+.Services_Column {
+	flex: 10%;
+  	padding: 5px;
+}
+
+.Services_Row {
+	display: flex;
+}
+
+.Services_AppStore_Button {
+	margin-left: 160px;
+	height: 60px;
+	width: 200px;
+	opacity: 0.8;
+	transition: 1s;
+}
+
+.Services_PlayStore_Button {
+	margin-left: -160px;
+	height: 60px;
+	width: 200px;
+	opacity: 0.8;
+	transition: 1s;
+}
+
+.Services_AppStore_Button:hover,
+.Services_PlayStore_Button:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.Button_Butterfly:hover,
+.Button_iWallet:hover,
+.Button_Contact:hover {
+	opacity: 1
+}
+
+.Index_Footer {
+	background-color: rgba(0, 0, 0, 0.3);
+	position: relative;
+	border: 0px;
+	border-top: 2px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	clear: both;
+    position: relative;
+    height: 70px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 20px;
+	transition: 1s;
+}
+
+.Services_Footer {
+	background-color: rgba(0, 0, 0, 0.3);
+	position: relative;
+	border: 0px;
+	border-top: 2px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	clear: both;
+    position: relative;
+    height: 70px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 20px;
+	transition: 1s;
+}
+
+#Badge_New {
+	font-size: 10px;
+	position: relative;
+	top: -15px;
+	left: -5px;
+}
+
+#Badge_New_Nav {
+	font-size: 10px;
+	position: relative;
+	top: -3px;
+	left: -0.5px;
+}
+
+#Badge_New_Theme {
+	font-size: 10px;
+	position: fixed;
+	top: 25px;
+	right: 410px;
+}
+
+#Contact_Button {
+	margin-left: 100px;
+	margin-bottom: 20px;
+}

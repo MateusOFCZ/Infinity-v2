@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" href="img/icon.png" />
+		<script src="js/functions.js"></script>
+		<title>Infinity</title>
+	</head>
+	<body id="Body" class="Tema_Original">
+		<nav class="navbar navbar-expand-sm navbar-custom sticky-top" style="z-index: 1;">
+			<img class="Logo" src="img/logo.png">
+			<ul class="navbar-nav">
+			<li class="nav-item Nav_Item_Custom">
+			  <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Início</a>
+			</li>			
+			<li class="nav-item dropdown Nav_Item_Custom">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-server"></i> Serviços</a>
+			  <div class="dropdown-menu Nav_Custom_Dropdown">
+				<a class="dropdown-item Nav_Item_Custom_Dropdown" href="servicos.html"><i class="fa fa-globe" aria-hidden="true"></i> Todos</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item Nav_Item_Custom_Dropdown" href="servicos.html#Butterfly"><i class="fa fa-circle" aria-hidden="true"></i> Butterfly</a>
+				<a class="dropdown-item Nav_Item_Custom_Dropdown" href="servicos.html#iWallet"><i class="fa fa-circle" aria-hidden="true"></i> iWallet <span id="Badge_New_Nav" class="badge badge-danger">NEW</span></a>
+			  </div>
+			</li>
+			<li class="nav-item Nav_Item_Custom">
+			  <a class="nav-link" href="#Contato"><i class="fa fa-envelope"></i> Contate-nos</a>
+			</li>
+			<div class="Nav_Separator">|</div>
+			<li class="nav-item dropdown Nav_Item_Custom">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-adjust"></i>  Tema </a><span id="Badge_New_Theme" class="badge badge-danger">NEW</span>
+				<div class="dropdown-menu Nav_Custom_Dropdown">
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('1')">Original</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('2')">Laranja</a>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('3')">Amarelo</a>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('4')">Escuro</a>
+				  <a class="dropdown-item Nav_Item_Custom_Dropdown" href="#" onclick="AlterarTema('5')">Claro</a>
+				</div>
+			</li>
+		  </ul>
+		</nav>
+		<div aria-live="assertive" aria-atomic="true" style="position: fixed; top: 85px; right: 5px; height: 200px;z-index: 2;">
+			<div id="Toast_Sucess" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+			  <div class="toast-header" style="background-color: #155724;color: #FFFFFF;border: 1px solid #155724;">
+				<strong class="mr-auto"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Sucesso</strong>
+				<button style="color: #FFFFFF;" type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="toast-body" style="background-color: #D4EDDA;color: #155724;">
+				Formulário enviado com sucesso!<br>
+				Responderemos através do e-mail<br>
+				informado em até 48 horas!
+			  </div>
+			</div>
+		</div>
+		<div aria-live="assertive" aria-atomic="true" style="position: fixed; top: 85px; right: 5px; height: 200px;z-index: 2;">
+			<div id="Toast_Error" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+			  <div class="toast-header" style="background-color: #571515;color: #FFFFFF;border: 1px solid #571515;">
+				<strong class="mr-auto"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Erro</strong>
+				<button style="color: #FFFFFF;" type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="toast-body" style="background-color: #EDD4D4;color: #571515;">
+				Preencha todos os campos e<br>verifique as informações!
+			  </div>
+			</div>
+		</div>
+		<div class="Section_About">
+			<p class="Title_About">Quem Somos?</p>
+			<img class="Rocket" src="img/rocket.png">
+			<p class="Text_About">
+				A Infinity é uma empresa de tecnologia que aposta na digitalização, que tal simplificarmos a maneira como você gerencia o seu negócio para que ele possa decolar?
+			</p>
+		</div>
+		<div class="Section_Butterfly">
+			<p class="Title_Butterfly">Butterfly</p>
+			<img class="Butterfly" src="img/butterfly_icon.png">
+			<p class="Text_Butterfly">
+				Conheça o Butterfly, o sistema de gerenciamento para lojas físicas<br>e online da Infinity!
+			</p>
+			<a href="servicos.html#Butterfly"><button class="Button_Butterfly">Saiba Mais</button></a>
+		</div>
+		<div class="Section_iWallet">
+			<p class="Title_iWallet">iWallet <span id="Badge_New" class="badge badge-danger">NEW</span></p>
+			<img class="iWallet" src="img/iwallet_icon.png">
+			<p class="Text_iWallet">
+				Venha conhecer o iWallet, a carteira virtual da Infinity!
+			</p>
+			<p class="Text_2_iWallet">
+				iWallet uma carteira, infinitas possibilidades.
+			</p>
+			<a href="servicos.html#iWallet"><button class="Button_iWallet">Saiba Mais</button></a>
+		</div>
+		<div class="Section_Contact">
+			<p id="Contato" class="Title_Contact">Contate-nos</p>
+			<img class="Contact" src="img/contact_icon.png">
+			<p class="Text_Contact">
+				Não encontrou o que queria? Fale com um de nossos especialistas e descubra como a Infinity pode te ajudar hoje!
+			</p>
+			<button id="Contact_Button" type="button" class="btn btn-dark btn-lg Button_Contact" data-toggle="modal" data-target="#ModalContato">Entrar em Contato</button>
+			<div id="ModalContato" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title TextBlack"><i class="fa fa-envelope" aria-hidden="true"></i> Contato</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<form action="/form.php">
+							<div class="modal-body TextBlack">
+								<label for="name"><i class="fa fa-id-card" aria-hidden="true"></i> Nome</label>
+								<input id="name" name="name" type="text" class="form-control">
+							</div>
+							<div class="modal-body TextBlack">
+								<label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> E-Mail</label>
+								<input id="email" name="email" type="email" class="form-control">
+							</div>
+							<div class="modal-body TextBlack">
+								<label for="mensagem"><i class="fa fa-commenting" aria-hidden="true"></i> Mensagem</label>
+								<textarea id="message" name="message" type="text" class="form-control"></textarea>
+							</div>
+						</form>
+						<div class="modal-footer">
+							<button onclick='Contact();' type="button" class="btn btn-default" data-dismiss="modal">Enviar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Index_Footer">
+			<p>
+				Todos os direitos reservados a Infinity© | 2021 | Desenvolvido por <a href="https://www.linkedin.com/in/mateusofcz" target="_blank"><strong><name>Mateus</name></strong></a> e <a href="https://www.linkedin.com/in/viniciusdacruzdasilva/" target="_blank"><strong><name>Vinícius</name></strong></a>
+			</p>
+		</div>
+	</body>
+</html>
